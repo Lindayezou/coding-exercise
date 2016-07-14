@@ -1,4 +1,4 @@
-.container {
+.main {
     background-color: #e6e6e6;
 }
 
@@ -14,6 +14,7 @@
     border-bottom: 1px solid gray;
 }
 .aptName p {
+    margin-top: 0.5em;
     font-size: xx-large;
     font-weight: bold;
 }
@@ -26,7 +27,9 @@
 }
 
 .aptInfo {
-    height:100;
+    max-height: 100%;
+    vertical-align: text-bottom;
+    background-color: white;
 }
 
 .nopadding {
@@ -37,6 +40,11 @@
 .sortButton {
     padding-bottom: 1em;
 }
+.sort {
+    color: grey;
+    font-weight: 600;
+    font-size: 1.2em;
+}
 
 button {
     border: none;
@@ -45,23 +53,48 @@ button {
 
 button:hover {
     background-color: orange;
+    color:black;
 }
 
 button:focus {
     outline:0;
     background-color: orange;
+    color:black;
 }
 
 .aptDesc {
     margin-top: 1em;
+    color: grey;
     max-width:100%;
-max-height:100%;
+    max-height:100%;
+}
+
+.aptDesc p {
+    margin-bottom: 0px;
 }
 
 .title h4 {
-    padding-left: 5%;
+    padding-left: 3%;
 }
 
 .pageControls {
-    padding-left: 5%;
+    padding-left: 3%;
 }
+
+.aptPrice div {
+    color: orange;
+    text-align: right;
+    padding-bottom: 1em;
+}
+
+.aptPrice span {
+    color: orange;
+}
+
+.aptPrice .price {
+    color: orange;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+

@@ -1,7 +1,7 @@
 angular.module("aptApp.AptListController", ['ui.bootstrap', 'angularUtils.directives.dirPagination'])
 
 .controller("AptListController", function($scope, $http, $location, $window) {
-	$scope.buttons = ["Popularity", "Price"]
+	$scope.buttons = ["Popularity", "Price"];
 	$scope.sort = "popularity";
 	$scope.data = [];
 	$scope.pageData = [];
