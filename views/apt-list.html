@@ -1,4 +1,30 @@
-
-<h1>List</h1>
-
-
+<div class="column">
+	<div class="row">
+		<div class="title col-lg-12 col-sm-12">
+			<h1>Minneapolis, MN: {{data.length}} Apartments</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="buttons col-lg-12 col-sm-12">
+			<div class="sortButton">
+				<button type="button">Popularity</button>
+				<button type="button">Price</button>
+			</div>	
+		</div>
+	</div>
+	<ul ng-repeat="apt in data">
+		<div class="row">
+			<div class="aptImage col-lg-5 col-sm-5" padding-right="0">
+				<img width="100%"; ng-src="{{apt.image}}"></img>				
+			</div>
+		  <div class="aptInfo col-lg-5 col-sm-7">
+		  	<div class="aptName">		    
+		  		<p>{{apt.name}}</p>
+				</div>
+		  	<div class="aptDesc">		    
+		  		<p>{{apt.description}}</p>
+				</div>
+		  </div>
+		</div>	
+	</ul> 
+</div>

@@ -1,0 +1,19 @@
+body {
+    background-color: grey;
+}
+
+.aptImage img {
+    width: 100%;
+}
+
+.aptImage {
+    padding-right: 0px;
+}
+
+.aptName {
+    border-bottom: 1px solid gray;
+}
+
+.aptInfo {
+/*    background-color: grey;
+*/}
