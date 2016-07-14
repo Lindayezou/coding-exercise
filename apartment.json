@@ -3,14 +3,14 @@
         	"name": "The Pavilion on Berry",
         	"image": "assets/image-1.jpg",
         	"price": 512,
-        	"popularity": 4,
+        	"popularity": -4,
         	"description": "University of Minnesota, Twin Cities Minneapolis, MN"
         },
         {        	
         	"name": "Radius @15th",
         	"image": "assets/image-2.jpg",
         	"price": 492,
-        	"popularity": 5,
+        	"popularity": -5,
         	"description": "University of Minnesota, Twin Cities Minneapolis, MN"
         },
         {
@@ -18,7 +18,7 @@
         	"name": "416 Lofts",
         	"image": "assets/image-3.jpg",
         	"price": 460,
-        	"popularity": 3,
+        	"popularity": -3,
         	"description": "University of Minnesota, Twin Cities Minneapolis, MN"
         },
         {
@@ -26,7 +26,7 @@
         	"name": "Edge on Oak",
         	"image": "assets/image-4.jpg",
         	"price": 532,
-        	"popularity": 7,
+        	"popularity": -7,
         	"description": "University of Minnesota, Twin Cities Minneapolis, MN"
         }
 ]

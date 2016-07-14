@@ -7,27 +7,28 @@
 	<div class="row">
 		<div class="buttons col-lg-12 col-sm-12">
 			<div class="sortButton">
-				<button type="button">Popularity</button>
-				<button type="button">Price</button>
+				<button ng-repeat="button in buttons" ng-click="selectSort(button)">{{button}}</button>
 			</div>	
 		</div>
 	</div>
-	<ul ng-repeat="apt in data">
-		<div class="row">
-			<div class="aptImage col-lg-5 col-sm-5" padding-right="0">
-				<img width="100%"; ng-src="{{apt.image}}"></img>				
-			</div>
-		  <div class="aptInfo col-lg-5 col-sm-7">
-		  	<div class="aptName" ng-click="detailsPage(apt)">		    
-		  		<p>{{apt.name}}</p>
+	<div class="apt-filter">
+		<ul ng-repeat="apt in data | orderBy:sort">
+			<div class="row">
+				<div class="aptImage col-lg-5 col-sm-5" padding-right="0">
+					<img width="100%"; ng-src="{{apt.image}}"></img>				
 				</div>
-		  	<div class="aptDesc">		    
-		  		<p>{{apt.description}}</p>
-				</div>
-		  	<div class="aptPrice">		    
-		  		<p>From ${{apt.price}} USD/month</p>
-				</div>
-		  </div>
-		</div>	
-	</ul> 
+			  <div class="aptInfo col-lg-5 col-sm-7">
+			  	<div class="aptName" ng-click="detailsPage(apt)">		    
+			  		<p>{{apt.name}}</p>
+					</div>
+			  	<div class="aptDesc">		    
+			  		<p>{{apt.description}}</p>
+					</div>
+			  	<div class="aptPrice">		    
+			  		<p>From ${{apt.price}} USD/month</p>
+					</div>
+			  </div>
+			</div>	
+		</ul> 
+	</div>	
 </div>
