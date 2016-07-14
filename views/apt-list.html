@@ -1,37 +1,38 @@
-<div class="column">
+<div class="container">
 	<div class="row">
-		<div class="title col-lg-12 col-sm-12">
-			<h1>Minneapolis, MN: {{data.length}} Apartments</h1>
+		<div class="title">
+			<h4>Minneapolis, MN: {{data.length}} Apartments</h4>
 		</div>
 	</div>
 	<div class="row">
-		<div class="buttons col-lg-12 col-sm-12">
+		<div class="buttons col-lg-2 col-sm-3 pull-right">
 			<div class="sortButton">
 				<button ng-repeat="button in buttons" ng-click="selectSort(button)" >{{button}}</button>
 			</div>	
 		</div>
 	</div>
 	<div class="apt-filter">
-		<ul dir-paginate="apt in data | orderBy:sort:reserve |itemsPerPage:5">
+		<ul dir-paginate="apt in data | orderBy:sort|itemsPerPage:5">
 			<div class="row">
-				<div class="aptImage col-lg-5 col-sm-5" padding-right="0">
+				<div class="aptImage col-lg-5 col-sm-5 nopadding">
 					<img width="100%"; ng-src="{{apt.image}}"></img>				
 				</div>
-			  <div class="aptInfo col-lg-5 col-sm-7">
+			  <div class="aptInfo col-lg-7 col-sm-7">
 			  	<div class="aptName" ng-click="detailsPage(apt)">		    
 			  		<p>{{apt.name}}</p>
 					</div>
 			  	<div class="aptDesc">		    
 			  		<p>{{apt.description}}</p>
+			  		<p>{{apt.location}}</p>
 					</div>
-			  	<div class="aptPrice">		    
-			  		<p>From ${{apt.price}} USD/month</p>
+			  	<div class="aptPrice pull-right">		    
+			  		<p>From ${{apt.Price}} USD/month</p>
 					</div>
 			  </div>
 			</div>	
 		</ul> 
 	</div>	
-	<div class="pages">
-	  <dir-pagination-controls max-size="5" direction-links="true" boundary-links="true"></dir-pagination-controls>
+	<div class="row pages">
+	  <dir-pagination-controls class="pageControls"max-size="5" direction-links="true" boundary-links="true"></dir-pagination-controls>
   </div>  
 </div>
