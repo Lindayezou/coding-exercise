@@ -27,9 +27,16 @@
 }
 
 .aptInfo {
-    max-height: 100%;
-    vertical-align: text-bottom;
+/*    max-height: 100%;
+    vertical-align: text-bottom;*/
     background-color: white;
+}
+
+.aptList {
+    display: flex;
+}
+.aptInfo {
+    align-items: stretch; 
 }
 
 .nopadding {
@@ -79,6 +86,12 @@ button:focus {
 
 .pageControls {
     padding-left: 3%;
+}
+
+.aptPrice {
+    position: absolute;
+    bottom:0;
+    right: 1.5em;
 }
 
 .aptPrice div {

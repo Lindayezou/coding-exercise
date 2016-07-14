@@ -1,6 +1,6 @@
 angular.module("aptApp.AptListController", ['ui.bootstrap', 'angularUtils.directives.dirPagination'])
 
-.controller("AptListController", function($scope, $http, $location, $window) {
+.controller("AptListController", function($scope, $http, $location, $window, $route) {
 	$scope.buttons = ["Popularity", "Price"];
 	$scope.sort = "popularity";
 	$scope.data = [];
@@ -24,5 +24,6 @@ angular.module("aptApp.AptListController", ['ui.bootstrap', 'angularUtils.direct
 	$scope.selectSort = function (sortType) {
 		$scope.sort = sortType;
 	}
+
 });
 
