@@ -18,11 +18,14 @@
 				<img width="100%"; ng-src="{{apt.image}}"></img>				
 			</div>
 		  <div class="aptInfo col-lg-5 col-sm-7">
-		  	<div class="aptName">		    
+		  	<div class="aptName" ng-click="detailsPage(apt)">		    
 		  		<p>{{apt.name}}</p>
 				</div>
 		  	<div class="aptDesc">		    
 		  		<p>{{apt.description}}</p>
+				</div>
+		  	<div class="aptPrice">		    
+		  		<p>From ${{apt.price}} USD/month</p>
 				</div>
 		  </div>
 		</div>	

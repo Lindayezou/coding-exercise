@@ -1,5 +1,6 @@
 angular.module("aptApp.AptDetailController", ['ui.bootstrap'])
 
-.controller("AptDetailController", function($scope, $http, $location, $services) {
+.controller("AptDetailController", function($scope, $http, $location, $window) {
+$scope.apt = $window.localStorage.getItem('aptName')
 
 });
