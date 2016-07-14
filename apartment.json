@@ -3,14 +3,14 @@
         	"name": "The Pavilion on Berry",
         	"image": "assets/image-1.jpg",
         	"price": 512,
-        	"popularity": -4,
+        	"popularity": 4,
         	"description": "University of Minnesota, Twin Cities Minneapolis, MN"
         },
         {        	
         	"name": "Radius @15th",
         	"image": "assets/image-2.jpg",
         	"price": 492,
-        	"popularity": -5,
+        	"popularity": 5,
         	"description": "University of Minnesota, Twin Cities Minneapolis, MN"
         },
         {
@@ -18,7 +18,7 @@
         	"name": "416 Lofts",
         	"image": "assets/image-3.jpg",
         	"price": 460,
-        	"popularity": -3,
+        	"popularity": 3,
         	"description": "University of Minnesota, Twin Cities Minneapolis, MN"
         },
         {
@@ -26,7 +26,67 @@
         	"name": "Edge on Oak",
         	"image": "assets/image-4.jpg",
         	"price": 532,
-        	"popularity": -7,
+        	"popularity": 7,
         	"description": "University of Minnesota, Twin Cities Minneapolis, MN"
+        },
+        {
+            "name": "Genesee Gardens",
+            "image": "assets/image-1.jpg",
+            "price": 612,
+            "popularity": 14,
+            "description": "University of Minnesota, Twin Cities Minneapolis, MN"
+        },
+        {           
+            "name": "Avalon SF",
+            "image": "assets/image-2.jpg",
+            "price": 592,
+            "popularity": 15,
+            "description": "University of Minnesota, Twin Cities Minneapolis, MN"
+        },
+        {
+
+            "name": "The Venetian",
+            "image": "assets/image-3.jpg",
+            "price": 560,
+            "popularity": 13,
+            "description": "University of Minnesota, Twin Cities Minneapolis, MN"
+        },
+        {
+
+            "name": "Seaside",
+            "image": "assets/image-4.jpg",
+            "price": 632,
+            "popularity": 17,
+            "description": "University of Minnesota, Twin Cities Minneapolis, MN"
+        },
+        {
+            "name": "La Jolla Shores",
+            "image": "assets/image-1.jpg",
+            "price": 712,
+            "popularity": 24,
+            "description": "University of Minnesota, Twin Cities Minneapolis, MN"
+        },
+        {           
+            "name": "Cross Roads",
+            "image": "assets/image-2.jpg",
+            "price": 692,
+            "popularity": 25,
+            "description": "University of Minnesota, Twin Cities Minneapolis, MN"
+        },
+        {
+
+            "name": "Ventana Commons ",
+            "image": "assets/image-3.jpg",
+            "price": 660,
+            "popularity": 23,
+            "description": "University of Minnesota, Twin Cities Minneapolis, MN"
+        },
+        {
+
+            "name": "Eaves",
+            "image": "assets/image-4.jpg",
+            "price": 732,
+            "popularity": 27,
+            "description": "University of Minnesota, Twin Cities Minneapolis, MN"
         }
 ]

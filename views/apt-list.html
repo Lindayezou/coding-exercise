@@ -7,12 +7,12 @@
 	<div class="row">
 		<div class="buttons col-lg-12 col-sm-12">
 			<div class="sortButton">
-				<button ng-repeat="button in buttons" ng-click="selectSort(button)">{{button}}</button>
+				<button ng-repeat="button in buttons" ng-click="selectSort(button)" >{{button}}</button>
 			</div>	
 		</div>
 	</div>
 	<div class="apt-filter">
-		<ul ng-repeat="apt in data | orderBy:sort">
+		<ul dir-paginate="apt in data | orderBy:sort:reserve |itemsPerPage:5">
 			<div class="row">
 				<div class="aptImage col-lg-5 col-sm-5" padding-right="0">
 					<img width="100%"; ng-src="{{apt.image}}"></img>				
@@ -31,4 +31,7 @@
 			</div>	
 		</ul> 
 	</div>	
+	<div class="pages">
+	  <dir-pagination-controls max-size="5" direction-links="true" boundary-links="true"></dir-pagination-controls>
+  </div>  
 </div>
